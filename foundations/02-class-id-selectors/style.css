@@ -1,0 +1,18 @@
+.red {
+    background-color: rgba(245, 101, 101, 0.63);
+    font-family: "Verdana", "DejaVu Sans", sans-serif;
+}
+.font {
+    font-size: 24px;
+}
+
+#id {
+    color: hsl(241, 91%, 45%);
+    font-size: 36px;
+}
+
+#green {
+    background-color: hsl(125, 20%, 54%);
+    font-size: 24px;
+    font-weight: bold;
+}
