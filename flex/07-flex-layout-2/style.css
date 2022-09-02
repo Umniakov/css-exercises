@@ -2,15 +2,25 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
+  display: flex;
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  align-items: center;
+  padding-left: 15px;
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 72px;
   background: #eee;
   color: darkmagenta;
@@ -19,10 +29,51 @@ body {
 .sidebar {
   width: 300px;
   background: royalblue;
+  flex: 1 0 auto;
+}
+
+.sidebar ul {
+  font-size: 1.2rem;
+  font-weight: 500;
+  list-style-type: none;
+  padding: 15px;
+  margin: 0;
+}
+.sidebar li {
+  padding: 10px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar li:last-child {
+  padding-left: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+.container {
+  display: flex;
+  flex: auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  align-content: flex-start;
+}
+
+.card {
+  text-align: justify;
+  width: 300px;
+  flex: 1 1 auto;
+  padding: 15px 15px 30px 15px;
+  text-indent: 30px;
 }
